@@ -3,6 +3,7 @@
      <div className="w-full">
        {/* Action Buttons */}
 -      <motion.div
+   )
 +      <motion.div
 +        id="contact-options"
          className="mb-8"
@@ -15,6 +16,7 @@
              onClick={() => setActiveView('quote')}
              className={`flex-1 px-6 py-4 font-bebas text-lg tracking-wider transition-all duration-300 rounded-md ${
                activeView === 'quote'
+             }
 @@ .. @@
            </button>
            
@@ -27,6 +29,8 @@
        {/* Content based on active view */}
        {activeView === 'quote' && (
          <motion.div
+       )
+       }
 +          id="quote-form-section"
            initial={{ opacity: 0, y: 20 }}
            animate={{ opacity: 1, y: 0 }}
@@ -34,6 +38,8 @@
 @@ .. @@
        {activeView === 'call' && (
          <motion.div
+       )
+       }
 +          id="book-call-section"
            initial={{ opacity: 0, y: 20 }}
            animate={{ opacity: 1, y: 0 }}
